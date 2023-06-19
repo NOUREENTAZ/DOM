@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM hendson 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2> Q.1 Write the code to access element which is having id as text</h2>
+    <div id="text"> I am Noureentaz</div>
+    <hr>
+    <hr>
+    <h2>Q.2 Write the code to access element which is having tag as h1</h2>
+    <h1> Welcome to Prepbytes website</h1>
+    <hr>
+    <hr>
+    <h2>Q.3 Write the code to access element which is having class as box</h2>
+    <div class="box"> box 1 </div>
+    <hr>
+    <hr>
+    <h2>Q.4 Change the heading from Hello to Hello World using DOM functions</h2>
+    <h3>Hello</h3>
+    <hr>
+    <hr>
+    <h2>Q.5 Create an HTML page having content as Hello world and a button named Replace Text. When user will click on this button page content should be changed to "Welcome to Elevation academy"</h2>
+    <div class="Replace">Hello World</div>
+    <button onclick="callme()">Replace Text</button>
+    <hr>
+    <hr>
+    <h2>Q.6 "Hello" Add one style attribute and give text color as red and id attribute and give the id value as ""heading"" in the above given h1 tag using DOM functions</h2>
+    <h1 id="heading">+Hello</h1>
+    <hr>
+    <hr>
+    <h2>Q.7 Create three cards on HTML page and arrange them using flex property in row or horizontal direction and also create button at the bottom named "Change Flex direction". When user clicks on this button, the cards arrangement should be changed to
+        vertical direction.</h2>
+    <div class="parent">
+        <div class="a">11</div>
+        <div class="a">22</div>
+        <div class="a">33</div>
+    </div>
+    <button id="h1">Change Flex direction</button>
+    <hr>
+    <hr>
+    <h2>Q.8 What's the difference between window vs document?</h2>
+    <div>
+        <table border="2" cellpadding="5">
+            <th> Document</th>
+            <th> Window </th>
+            <tr>
+                <td>1. It represents any HTML document or web page that is loaded in the browser.</td>
+                <td>1. It represents a browser window or frame that displays the contents of the webpage. </td>
+            </tr>
+            <tr>
+                <td>2. It is loaded inside the window.</td>
+                <td>2. It is the very first object that is loaded in the browser.</td>
+            </tr>
+
+            <tr>
+                <td>3. It is the object of window property.</td>
+                <td>3. It is the object of the browser.</td>
+            </tr>
+
+            <tr>
+                <td>4. All the tags, elements with attributes in HTML are part of the document.</td>
+                <td>4. Global objects, functions, and variables of JavaScript are members of the window object.</td>
+            </tr>
+
+            <tr>
+                <td>5. We can access the document from a window using the window. document</td>
+                <td>5. We can access the window from the window only. i.e. window.window</td>
+            </tr>
+
+            <tr>
+                <td>6. The document is part of BOM (browser object model) and dom (Document object model) </td>
+                <td>6. The window is part of BOM, not DOM.</td>
+            </tr>
+
+            <tr>
+                <td>7. Properties of document objects such as title, body, cookies, etc can also be accessed by a window like this window. document.title</td>
+                <td>7. Properties of the window object cannot be accessed by the document object.</td>
+            </tr>
+            <tr>
+                <td>8. <pre>syntax:
+                    document.propertyname;
+                </pre></td>
+                <td>8. <pre>syntax:
+                    window.propertyname;
+                </pre></td>
+                <tr>
+                    <td>9. <pre>example  :document.title :will return the title of the document
+                </pre></td>
+                    <td>9. <pre>example  :window.innerHeight :will return the height of the content area of the browser
+                </pre></td>
+                </tr>
+        </table>
+    </div>
+    </div>
+    <hr>
+    <hr>
+    <h2>Q.9 = Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every second</h2>
+    <div class="time"></div>
+    <h3></h3>
+    <div class="par">
+        <div class="h3" onclick="callme()">12 H </div>
+        <div class="h3">12 M</div>
+        <div class="h3">12 sec</div>
+        <br>
+        <br> &nbsp;
+        <div class="h3 am">AM</div>
+
+
+
+    </div>
+    <hr>
+    <hr>
+
+    <h2>Q.10 = link to play game</h2>
+    <div><a href="./index1.html"> play game zone</a></div>
+
+
+    <script src="./index.js"></script>
+
+    <hr>
+    <hr>
+
+
+</body>
+
+</html>

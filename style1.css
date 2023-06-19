@@ -1,0 +1,84 @@
+body {
+    background-color: rgb(27, 2, 2);
+}
+
+.Play {
+    padding: 18px;
+    width: 190px;
+    font-size: 20px;
+}
+
+.condition {
+    float: right;
+    color: white;
+    font-size: 30px;
+}
+
+.heading {
+    text-align: center;
+    color: white;
+}
+
+.box {
+    border: 2px solid black;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    left: 45%;
+    font-size: 80px;
+    text-align: center;
+    font-weight: bold;
+    background-color: white;
+}
+
+.line {
+    border: 2px solid rgba(0, 0, 0, 0);
+    width: 99%;
+    height: 10px;
+    position: absolute;
+    top: 33%;
+    background-color: white;
+}
+
+#name {
+    position: absolute;
+    top: 50%;
+    left: 13%;
+    padding: 25px;
+    font-size: 35px;
+    width: 231px;
+    text-align: center;
+}
+
+.guess {
+    position: absolute;
+    right: 15%;
+    top: 55%;
+    font-size: 40px;
+    color: white;
+}
+
+.check {
+    position: absolute;
+    left: 16%;
+    top: 68%;
+    padding: 17px;
+    width: 190px;
+    font-size: 30px;
+}
+
+.chance {
+    position: absolute;
+    right: 22%;
+    top: 65%;
+    font-size: 25px;
+    color: white;
+}
+
+.score {
+    position: absolute;
+    right: 20%;
+    top: 72%;
+    font-size: 30px;
+    color: white;
+}
