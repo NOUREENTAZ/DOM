@@ -1,11 +1,11 @@
-let txt = document.getElementById("text")
-console.log(txt.innerText)
+let text = document.getElementById("text")
+console.log(text.innerText)
 
-let main = document.getElementsByTagName('h1')
-console.log(main);
+let head = document.getElementsByTagName('h1')
+console.log(head);
 
-let q3 = document.getElementsByClassName('box')
-console.log(q3)
+let boxx = document.getElementsByClassName('box')
+console.log(boxx)
 
 let mm = document.querySelector('h3');
 
@@ -28,9 +28,9 @@ header.addEventListener('click', () => {
 
 
 let parent = document.querySelector('.parent')
-let head1 = document.querySelector('#h1')
+let bot = document.querySelector('#h1')
 let count = 0;
-head1.addEventListener('click', () => {
+bot.addEventListener('click', () => {
     if (count % 2 === 0) {
         parent.setAttribute('style', 'flex-direction:column')
         count++;
@@ -45,35 +45,7 @@ head1.addEventListener('click', () => {
 
 })
 
-let c1 = document.getElementsByClassName("h3")
-let AM = document.getElementsByClassName("am")
 
-function callme() {
-    let time = new Date()
-    let hours = time.getHours()
-    let mins = time.getMinutes()
-    let sec = time.getSeconds()
-
-    if (hours > 12) {
-        hours = hours - 12
-        AM[0].innerText = 'pm'
-    } else {
-        AM[0].innerText = 'am'
-    }
-
-
-    let timezone = `${hours} hours`
-    let timezone1 = `${mins} mins`
-    let timezone2 = `${sec} sec`
-        // console.log("hours,mins,sec")
-
-    c1[0].innerText = timezone
-    c1[1].innerText = timezone1
-    c1[2].innerText = timezone2
-}
-setInterval(() => {
-    callme()
-}, 1000);
 
 let clock = document.querySelector('.Time')
 let h2 = document.querySelectorAll('h2')
