@@ -64,3 +64,33 @@ function time() {
 setInterval(() => {
     time()
 }, 1000)
+
+let clk = document.getElementsByClassName("h3")
+let AM = document.getElementsByClassName("am")
+
+function call() {
+    let time = new Date()
+    let hours = time.getHours()
+    let mins = time.getMinutes()
+    let sec = time.getSeconds()
+
+    if (hours > 12) {
+        hours = hours - 12
+        AM[0].innerText = 'pm'
+    } else {
+        AM[0].innerText = 'am'
+    }
+
+
+    let timezone = `${hours} hours`
+    let timezone1 = `${mins} mins`
+    let timezone2 = `${sec} sec`
+        // console.log("hours,mins,sec")
+
+    clk[0].innerText = timezone
+    clk[1].innerText = timezone1
+    clk[2].innerText = timezone2
+}
+setInterval(() => {
+    call()
+}, 1000);
